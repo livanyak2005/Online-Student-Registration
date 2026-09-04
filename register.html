@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="form-box">
+
+        <h1>Student Registration</h1>
+        <p class="subtitle">Create your student account</p>
+
+        <form id="registerForm">
+
+            <label>Full Name</label>
+            <input type="text" id="name" placeholder="Enter full name">
+
+            <label>Email</label>
+            <input type="text" id="email" placeholder="Enter email">
+
+            <label>Phone Number</label>
+            <input type="text" id="phone" placeholder="Enter phone number">
+
+            <label>College Name</label>
+            <input type="text" id="college" placeholder="Enter college name">
+
+            <label>Course</label>
+            <select id="course">
+                <option value="">Select Course</option>
+                <option value="MCA">MCA</option>
+                <option value="BCA">BCA</option>
+                <option value="B.Sc">B.Sc</option>
+                <option value="B.Com">B.Com</option>
+            </select>
+
+            <label>Username</label>
+            <input type="text" id="username" placeholder="Create username">
+
+            <label>Password</label>
+            <div class="password-box">
+    <input type="password" id="password" placeholder="Enter password">
+    <span class="eye" onclick="togglePassword('password', this)">👁️</span>
+</div>
+
+            <label>Confirm Password</label>
+            <div class="password-box">
+    <input type="password" id="confirmPassword" placeholder="Confirm password">
+    <span class="eye" onclick="togglePassword('confirmPassword', this)">👁️</span>
+</div>
+
+            <button type="submit">Register</button>
+
+            <p id="registerMessage"></p>
+
+        </form>
+
+        <p class="bottom-text">
+            Already have an account?
+            <a href="index.html">Login</a>
+        </p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
